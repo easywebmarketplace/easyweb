@@ -1,0 +1,87 @@
+:root {
+	--txt-clr: #ededed;
+	--txt-desaturated-clr: #dedede;
+
+	--primary-clr: hsl(227, 86%, 55%);
+	--primary-highlight-clr: hsl(227, 86%, 65%);
+	--primary-desaturated-clr: hsl(227, 36%, 55%);
+
+	--widget-clr: hsl(220, 11%, 25%);
+
+	--background-clr: hsl(220, 11%, 17%);
+	--background-dark-clr: hsl(220, 11%, 10%);
+
+	--fw-100: 100;
+	--fw-400: 400;
+	--fw-600: 600;
+	--fw-900: 900;
+
+	--fs-sm: 0.925rem;
+	--fs-md: 1rem;
+	--fs-lg: 1.25rem;
+	--fs-xl: 1.75rem;
+	--fs-2xl: 2rem;
+	--fs-3xl: 3rem;
+
+	--size-tn: 0.625rem;
+	--size-sm: 1rem;
+	--size-md: 1.5rem;
+	--size-lg: 2.5rem;
+	--size-xl: 3rem;
+	--size-2xl: 4rem;
+	--size-3xl: 5rem;
+	--size-5xl: 15rem;
+
+	--default-font: 'Montserrat', sans-serif;
+}
+
+.flow > *:not(:last-child):not([absolute]) {
+	margin-bottom: var(--flow-spacer, 1rem);
+}
+
+.h-padding-container > *:not([absolute]) {
+	padding-left: clamp(
+		var(--size-sm),
+		10vw,
+		var(--size-5xl)
+	);
+	padding-right: clamp(
+		var(--size-sm),
+		10vw,
+		var(--size-5xl)
+	);
+}
+
+.h-padding {
+	padding-left: clamp(
+		var(--size-sm),
+		10vw,
+		var(--size-5xl)
+	);
+	padding-right: clamp(
+		var(--size-sm),
+		10vw,
+		var(--size-5xl)
+	);
+}
+
+.flex {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 5rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.transparent {
+	background: transparent;
+}
+
+
+.details {
+	color: var(--txt-desaturated-clr);
+}
+
+.title {
+	font-size: clamp(2rem, 4vw, 3rem);
+}
